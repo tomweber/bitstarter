@@ -3,7 +3,7 @@ var fs = require('fs')
 
 var app = express.createServer(express.logger());
 
-var mystring = fs.readFileSync("./bitstarter-hw4.html", 'UTF-8');
+var mystring = fs.readFileSync("./index.html", 'UTF-8');
 
 app.get('/', function(request, response) {
   response.send(mystring);
